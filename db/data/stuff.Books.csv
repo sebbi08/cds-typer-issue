@@ -1,4 +1,4 @@
-title;language
-A demo book;German
-Another demo book;English
-A third demo book;English
+title,myEnum
+A demo book,MyEnumA
+Another demo book,MyEnumB
+A third demo book,MyEnumB

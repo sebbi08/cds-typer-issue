@@ -7,7 +7,8 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^7",
-    "express": "^4"
+    "express": "^4",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "@cap-js/cds-typer": "^0",
@@ -15,7 +16,8 @@
     "@types/node": "^20.8.4"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-ts serve",
+    "gen-types": "npx @cap-js/cds-typer ./srv/test-service.cds --outputDirectory ./@cds-models"
   },
   "imports": {
     "#cds-models/*": "./@cds-models/*/index.js"

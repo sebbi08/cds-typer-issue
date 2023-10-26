@@ -1,11 +1,11 @@
 namespace stuff;
 
-type Language : String enum {
-    DE = 'German';
-    EN = 'English'
+type MyEnum : String enum {
+    MyEnumA;
+    MyEnumB;
 }
 
 entity Books {
     title    : String;
-    language : Language;
+    myEnum : MyEnum;
 }
